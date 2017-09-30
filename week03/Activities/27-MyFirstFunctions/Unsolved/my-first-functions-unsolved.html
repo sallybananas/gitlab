@@ -14,13 +14,30 @@
       // ================================================================================
 
       // Create a Function called "adder" that take three arguments (x, y, z).
+      
+
+      function adder(x, y, z) {
+        console.log(x + y + z);
+      }
+      adder(4,5,6);
+      adder(1,2,3);
+
+      function multiplier(x, y, z) {
+        console.log(x * y * z);
+      }
+      multiplier(4,5,6);
+
+      function isString(x, y, z) {
+        console.log(x, y, z)
+        if (typeof x === "string" || typeof y === "string" || typeof z === "string"){
+          console.log(x, y, z)
+        }
+      }
+      isString("name", "is", 25)
+      
       // The function should add the arguments together, and log the result to the console.
-
-
       // Create a Function called "multiplier" that takes three arguments (x, y, z).
       // The function should multiply the arguments, and log the result to the console.
-
-
       // Create a Function called "isString" that takes three arguments (x, y, z).
       // "isString" determines if all three arguments are strings and logs an appropriate response to the console.
 
