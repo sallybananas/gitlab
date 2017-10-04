@@ -17,73 +17,23 @@
 
     // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
     var computerChoices = ["r", "p", "s"];
-    // var userGuess = ["r", "p", "s"];
 
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
 
-     
+      // Determines which key was pressed.
+      var userGuess = event.key;
 
-      
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-        var userChoice = prompt("Do you choose rock, paper or scissors?");
-        
-        // // Determines which key was pressed.
-        // var userGuess = event.key;
-        
-        // Alerts the key the user pressed (userGuess).
-        alert("User guess: " + userChoice);
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
 
-        // This function is run whenever the user presses a key.
-        // document.onkeyup = function(event) {
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
 
-      // var computerChoice = Math.random();
-       
-          // Randomly chooses a choice from the options array. This is the Computer's guess.
-          var computerChoice = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-      
-          // Alerts the Computer's guess.
-          alert("Computer choice: " + computerChoice);
-          
-      // if (computerChoice <0.34){
-      //     computerChoice = "r";
-      // }else if(computerChoice <=0.67){
-      //     computerChoice = "p";
-      // }
-      // else{
-      //     computerChoice = "s";
-      // }
-      var compare = function(choice1,choice2){
-          if(choice1===choice2){
-              alert("The result is a tie!");
-          }
-          else if(choice1==="r"){
-              if(choice2==="s"){
-                  alert("rock wins");
-              }
-              else{
-                  alert("paper wins");
-              }
-          }
-          else if(choice1==="p"){
-              if(choice2==="r"){
-                  alert("paper wins");
-              }
-              else{
-                  alert("scissors wins");
-              }
-          }
-          else if(choice1==="s"){
-              if(choice2==="r"){
-                  alert("rock wins");
-              }
-              else{
-                  alert("scissors wins");
-              }
-          }
-          
-      }
-      compare(userChoice,computerChoice);
-        // }
-
+    };
   </script>
 
 </body>
