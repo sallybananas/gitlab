@@ -11,12 +11,12 @@
 </head>
 
 <body>
-
+<div id="sandwich">
   <h1>Click to Eat Sandwich</h1>
   <h3 id="pbj">Peanut Butter Jelly</h3>
   <h3 id="grilledcheese">Grilled Cheese</h3>
   <h3 id="roastbeef">Roast Beef</h3>
-
+</div>
   <script type="text/javascript">
 
     // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
@@ -25,11 +25,35 @@
 
     $(document).ready(function() {
 
+      var pbjCounter = 0;
+      var grilledcheeseCounter = 0;
+      var roastbeefCounter = 0;
+
+
       // VARIABLES
       // ====================================================================
       // Here we create variables for tracking the number of sandwiches eaten
       // ...
+      $("#pbj").on("click", function() {
 
+        alert("You have eaten a sloppy sandwich");
+        pbjCounter++;
+        alert("You have chosen PBJ " + pbjCounter + " times.");
+      });
+
+      $("#grilledcheese").on("click", function() {
+
+        alert("You have eaten a lovley sandwich");
+        grilledcheeseCounter++;
+        alert("You have chosen Grilled Cheese " + grilledcheeseCounter + " times.");
+      });
+
+      $("#roastbeef").on("click", function() {
+
+        alert("You have eaten a meaty sandwich");
+        roastbeefCounter++;
+        alert("You have chosen Roast Beef " + roastbeefCounter + " times.");
+      });
 
       // ...
 
