@@ -2,18 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
   <title>JavaScript Content!</title>
 </head>
 <body>
-<!-- Here we're adding a bit of CSS -->
-<style>
-    .fancy {
-      font-size: 100px;
-      color: green;
-    }
-  </style>
 
   <h1>Drink Selection!</h1>
   <hr>
@@ -38,24 +29,11 @@
 
     // 1. Create code that "grabs" the div with the matching id (#drink-options);
     // ...
-  // for(var i = 0; i < drinkList.length; i++) {
-  //   var targetDiv = document.getElementById("drink-options");
-  //   var newDiv = document.createElement("div");
-    
-  //   newDiv.innerHTML = drinkList[i];
 
-  //   targetDiv.appendChild(newDiv);
-  // }
+
     // ...
-// for(var i = 0; i < drinkList.length; i++) {
-  // $(selector).each(function(index,element))
-   $(drinkList).each(function(i){
-    var newDiv = $("<div>");
-    newDiv.text(drinkList[i]);
-    $("#drink-options").append(newDiv);
-    })
 
-    
+
     // 2. Create a for loop that creates HTML content of all the drinks using JavaScript.
     // HINT: You will need to use each of the following methods: createElement, innerHTML, appendChild
     // ...

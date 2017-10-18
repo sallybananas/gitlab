@@ -8,6 +8,7 @@ In this week we will be introducing students to their first taste of jQuery. In 
 
 * [4.1 - jQuery Begins]
 * [4.2 - jQuery Jubilee]
+* [4.3 - *to be added*]
 
 ### Homework Activities
 

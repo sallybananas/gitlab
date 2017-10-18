@@ -18,40 +18,28 @@
   // Here we are given a cob-web of items. Let's dig in and grab the items we need.
   var theCobWeb = {
     biggestWeb: {
-      item: ["comb"],
+      item: "comb",
       biggerWeb: {
         items: ["glasses", "paperclip", "bubblegum"],
         smallerWeb: {
-          item: ["toothbrush"],
+          item: "toothbrush",
           tinyWeb: {
             items: ["toenails", "lint", "wrapper", "homework"]
           }
         }
       },
       otherBigWeb: {
-        item: ["headphones"],
+        item: "headphones"
       }
     }
   };
 
-  var foundString = "I found my ";
-
 // Create the code necessary to print each of the following lines using the object above:
 // "I found my glasses!"
-
-console.log(theCobWeb.biggestWeb.biggerWeb.items[0])
-
 // "I found my toothbrush!"
-
-console.log(theCobWeb.biggestWeb.biggerWeb.smallerWeb.item[0])
-
 // "I found my headphones!"
-
-console.log(theCobWeb.biggestWeb.otherBigWeb.item[0])
-
 // "I found my homework!"
 
-console.log(theCobWeb.biggestWeb.biggerWeb.smallerWeb.tinyWeb.items[3])
 
 // Bonus (Extra Hard): It's impossible to complete this in the allotted time. Take this home as a challenge and bring it back to your TA/Instructor for the solution.
 //Create a function using JavaScript (NOT jQuery) for which you can pass the name of an item and theCobWeb
