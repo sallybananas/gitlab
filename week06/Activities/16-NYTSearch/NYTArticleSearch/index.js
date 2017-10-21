@@ -1,3 +1,7 @@
+$( function() {
+  $( ".datepicker" ).datepicker();
+} );
+
 $(document).ready(() => {
   
   const queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?";
